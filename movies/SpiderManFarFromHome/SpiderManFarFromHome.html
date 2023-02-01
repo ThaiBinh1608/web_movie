@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Zues
+    </title>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;700;900&display=swap" rel="stylesheet">
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" />
+    <!-- BOX ICONS -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+    <!-- APP CSS -->
+    <link rel="stylesheet" href="../../grid.css">
+    <link rel="stylesheet" href="../../app.css">
+    <link rel="stylesheet" href="./SpiderManFarFromHome.css">
+</head>
+
+<body>
+
+    <!-- NAV -->
+    <div class="nav-wrapper">
+        <div class="container">
+            <div class="nav">
+                <a href="#" class="logo">
+                    <i class='bx bx-movie-play bx-tada main-color'></i>Z<span class="main-color">u</span>es
+                </a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../../movies.html">Movies</a></li>
+                    <li><a href="../../series.html">Series</a></li>
+                    <li><a href="../../cartoons.html">Cartoon</a></li>
+                    <li><a href="#">About</a></li>
+                    <li>
+                        <a href="#" class="btn btn-hover">
+                            <span>Sign in</span>
+                        </a>
+                    </li>
+                </ul>
+                <!-- MOBILE MENU TOGGLE -->
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <div class="hamburger"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END NAV -->
+ 
+       
+  
+
+    <div class="banner">
+        <div class="content">
+            <h2>SpiderMan Far From Home</h2>
+            <p>
+                Sau sự kiện của Avengers: Endgame, Peter Parker (Tom Holland) trở lại
+                trong Người Nhện: Xa Nhà. Siêu anh hùng hàng xóm thân thiện của chúng tôi quyết định tham gia
+                những người bạn thân nhất của anh ấy là Ned, MJ và những người còn lại trong nhóm đang đi nghỉ ở châu Âu. Tuy nhiên,
+                Kế hoạch bỏ lại các siêu anh hùng trong vài tuần của Peter nhanh chóng bị hủy bỏ khi anh
+                miễn cưỡng đồng ý giúp Nick Fury (Samuel L. Jackson) khám phá bí ẩn của một số
+                các cuộc tấn công sinh vật nguyên tố. Người Nhện và Mysterio (Jake Gyllenhaal) hợp sức chiến đấu
+                sự tàn phá tung ra khắp lục địa nhưng tất cả không như vẻ ngoài của nó .....
+            </p>
+            <a href="#" class="play" onclick="toggle();"><img src="play.png" alt="">watch now</a>
+        </div>
+    </div>
+    <div class="trailer">
+        <video src="Joker.mp4" controls="true"></video>
+        <img src="close.png" alt="" class="close" onclick="toggle();">
+    </div>
+    <script>
+        function toggle(){
+        var trailer=document.querySelector('.trailer');
+        let video=document.querySelector('.video');
+        trailer.classList.toggle('active');
+        video.currentTime = 0;
+        video.pause();
+    }
+    </script>
+
+     <!-- MOVIES SECTION -->
+     <div class="section">
+        <div class="container">
+            <div class="section-header">
+                Movie mới cập nhật
+            </div>
+            <div class="movies-slide carousel-nav-center owl-carousel">
+                
+                <!-- MOVIE ITEM -->
+                <a href="../CaptainMarvel/CaptainMarvel.html" class="movie-item">
+                    <img src="../CaptainMarvel/captain-marvel.png" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Captain Marvel
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+               
+                <!-- MOVIE ITEM -->
+                <a href="../Bloodshot/Bloodshot.html" class="movie-item">
+                    <img src="../Bloodshot/blood-shot.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Bloodshot
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+
+                <!-- MOVIE ITEM -->
+                <a href="../AvengersEndGame/AvengersEndGame.html" class="movie-item">
+                    <img src="../AvengersEndGame/avenger-endgame.jpeg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                            Avenger: End Game
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+
+                 <!-- MOVIE ITEM -->
+                 <a href="../WonderWoman/WonderWoman.html" class="movie-item">
+                    <img src="../WonderWoman/wonderrwoman.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                           Wonder Woman
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+
+                <!-- MOVIE ITEM -->
+                <a href="../WonderWoman1984/WonderWoman1984.html" class="movie-item">
+                    <img src="../WonderWoman1984/wonder-woman-1984.jpg" alt="">
+                    <div class="movie-item-content">
+                        <div class="movie-item-title">
+                           Wonder Woman 1984
+                        </div>
+                        <div class="movie-infos">
+                            <div class="movie-info">
+                                <i class="bx bxs-star"></i>
+                                <span>9.5</span>
+                            </div>
+                            <div class="movie-info">
+                                <i class="bx bxs-time"></i>
+                                <span>120 mins</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>HD</span>
+                            </div>
+                            <div class="movie-info">
+                                <span>16+</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- END MOVIE ITEM -->
+               
+            </div>
+        </div>
+    </div>
+    <!-- END MOVIES SECTION -->
+
+    <!-- FOOTER SECTION -->
+    <footer class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 col-md-6 col-sm-12">
+                    <div class="content">
+                        <a href="#" class="logo">
+                            <i class='bx bx-movie-play bx-tada main-color'></i>Z<span class="main-color">u</span>es
+                        </a>
+                       
+                        <div class="social-list">
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-facebook"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-twitter"></i>
+                            </a>
+                            <a href="#" class="social-item">
+                                <i class="bx bxl-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 col-md-6 col-sm-12">
+                    <div class="row">
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Flix</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Browse</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Help</b></p>
+                                <ul class="footer-menu">
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">My profile</a></li>
+                                    <li><a href="#">Pricing plans</a></li>
+                                    <li><a href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-3 col-md-6 col-sm-6">
+                            <div class="content">
+                                <p><b>Download app</b></p>
+                                <ul class="footer-menu">
+                                    <li>
+                                        <a href="#">
+                                            <img src="../../images/google-play.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="../../images/app-store.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER SECTION -->
+
+   
+   
+ 
+
+    <!-- SCRIPT -->
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!-- OWL CAROUSEL -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"></script>
+    <!-- APP SCRIPT -->
+    <script src="../../app.js"></script>
+
+</body>
+
+</html>
+  
